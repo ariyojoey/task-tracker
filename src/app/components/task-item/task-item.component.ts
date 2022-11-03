@@ -17,11 +17,11 @@ export class TaskItemComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onDelete(task) {
+  onDelete(task: Task) {
     this.onDeleteTask.emit(task);
   }
 
-  onToggle(task) {
+  onToggle(task: Task) {
     this.onToggleReminder.emit(task);
   }
 }
